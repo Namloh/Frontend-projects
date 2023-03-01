@@ -415,6 +415,10 @@ body{
     color: white;
     margin: 0;
 }
+#contact a{
+    margin-top: 0;
+}
+
 #contact a:hover{
     margin-top: 0;
     color: #ff7425;
