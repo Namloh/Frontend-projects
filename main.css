@@ -380,9 +380,12 @@ body{
 .contact-info div h3{
     font-size: 1.1em;
     font-weight: bold;
+    margin-block-end: 0.5rem;
+     writing-mode: horizontal-tb;
 }
 .contact-info div p{
     margin-bottom: 0.5rem;
+    -webkit-text-fill-color: white;
 }
 .partners div{
     margin-top: 2rem;
