@@ -14,7 +14,7 @@ body{
 
 .navbar{
     background-color: transparent;
-    padding: 3% 5%;
+    padding: 2% 5%;
     
 }
 .navbar-dark .navbar-brand{
@@ -42,13 +42,14 @@ body{
     color: #ff7425 !important;
     
   }
- 
+ /*
 .navbar-nav{
     background-color: #222222;
     width: fit-content;
     padding: 10px;
 
 }
+*/
 /*hero */
 
 .hero{
@@ -90,11 +91,10 @@ body{
     border: 2px solid #ff7425;
     font-size: 2vw;
     padding: 1.5vw 3vw;
-    
+    transition: all 0.2s ease-in-out;
 }
 .hero-button:hover{
    background-color: #ff7425;
-   transition: 0.3s;
    color: white;
 }
 .hero-section a{
@@ -158,7 +158,7 @@ body{
 }
 .about-text{
     color: white;
-    text-align: start;
+    text-align: center;
     font-size: 1.2em;
     font-weight: 800;
     line-height: 18pt;
@@ -271,8 +271,12 @@ body{
 .ref-icons img{
     width: 75%;
 }
-
-
+.carousel{
+    overflow: hidden;
+}
+.carousel-item{
+    overflow: hidden;
+}
 
 
 /*cenik*/
@@ -298,6 +302,7 @@ body{
     font-weight: bold;
     background-color: #ff7425;
     color: white;
+    transition: color 0.3s ease-in-out;
 }
 .poptat:hover{
     color: black;
@@ -417,12 +422,12 @@ body{
 }
 #contact a{
     margin-top: 0;
+    transition: color 0.1s ease-in-out;
 }
 
 #contact a:hover{
-    margin-top: 0;
     color: #ff7425;
-    transition: 0.3s;
+    
 }
 
 
@@ -618,6 +623,8 @@ body{
     .ref-icons img {
         width: 65%;
     }
+
+
 
 
     .prices-grid{
