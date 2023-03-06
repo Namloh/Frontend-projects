@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 <title>LOGO</title>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="250" class="scrollspy-example" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" data-bs-offset="250" class="scrollspy-example" tabindex="0">
    
 
 
@@ -20,7 +20,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LOGO</a>
   
-      <button class="navbar-toggler" style="margin-right:5px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <button id="hamburger" class="navbar-toggler" style="margin-right:5px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                   <span class="navbar-toggler-icon"></span>
                 </button>
       <div class="collapse navbar-collapse top_nav" id="navbarSupportedContent">
@@ -114,7 +114,7 @@
       <h2>REFERENCE</h2>
       <div class="reference-mid">
       <div>
-      <div id="carouselExampleControls" class="carousel slide ref" data-ride="carousel">
+      <div id="carouselExampleControls" class="carousel slide ref" data-bs-ride="carousel">
   
       <div class="carousel-inner" id="inner">
 
@@ -155,8 +155,8 @@
   </div>
       </div>
     <div class="arrows">
-      <button class="arr-btn" href="#carouselExampleControls" role="button" data-bs-slide="prev"><img src="./Assets/Čepelák_šipka_doleva.png"></button>
-      <button class="arr-btn"  href="#carouselExampleControls" role="button" data-bs-slide="next"><img src="./Assets/Čepelák_šipka_doprava.png"></button>
+      <button class="arr-btn carousel-control-prev" href="#carouselExampleControls" data-bs-slide="prev"><img src="./Assets/Čepelák_šipka_doleva.png"></button>
+      <button class="arr-btn carousel-control-next"  href="#carouselExampleControls" data-bs-slide="next"><img src="./Assets/Čepelák_šipka_doprava.png"></button>
     </div>
     
   </div>
@@ -186,7 +186,7 @@
         <p >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamu erspiciatis cum ipsa repellendus.
         </p>
-        <button class="hero-button">30 000 Kč</button>
+        <a href="#contact"><button class="hero-button">30 000 Kč</button></a>
       </div>
 
       <div class="prices-grid-item">
@@ -194,7 +194,7 @@
         <p >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamu erspiciatis cum ipsa repellendus.
         </p>
-        <button class="hero-button">30 000 Kč</button>
+        <a href="#contact"><button class="hero-button">30 000 Kč</button></a>
       </div>
 
       <div class="prices-grid-item">
@@ -202,7 +202,7 @@
         <p >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamu erspiciatis cum ipsa repellendus.
         </p>
-        <button class="hero-button">30 000 Kč</button>
+          <a href="#contact"><button class="hero-button">30 000 Kč</button></a>
       </div>
 
       <div class="prices-grid-item">
@@ -210,7 +210,7 @@
         <p >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamu erspiciatis cum ipsa repellendus.
         </p>
-        <button class="hero-button">30 000 Kč</button>
+          <a href="#contact"><button class="hero-button">30 000 Kč</button></a>
       </div>
     </div>
 

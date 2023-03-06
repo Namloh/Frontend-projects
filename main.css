@@ -8,6 +8,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: #ff7425;
     padding-top: 8%;
+    position: relative;
 }
 
 /*navbar*/
@@ -15,7 +16,7 @@ body{
 .navbar{
     background-color: transparent;
     padding: 2% 5%;
-    
+    transition: background-color 200ms ease-in-out;
 }
 .navbar-dark .navbar-brand{
     color: #ff7425;
@@ -36,8 +37,9 @@ body{
 }
 .navbar.scrolled {
     background-color: #242424;
-    transition: background-color 200ms linear;
+  
   }
+
   .nav-link.active {
     color: #ff7425 !important;
     
@@ -303,6 +305,7 @@ body{
     background-color: #ff7425;
     color: white;
     transition: color 0.3s ease-in-out;
+    margin-top: 5rem;
 }
 .poptat:hover{
     color: black;
@@ -311,7 +314,9 @@ body{
     margin-top: 5rem;
     display: inline-block;
 }
-
+#prices a{
+    margin-top: 0;
+}
 
 /*kariera*/
 .career p, .career h4{
@@ -439,6 +444,9 @@ body{
         background-image: url("./Assets/Cepelak_pozadí_pc.png");
 
     }
+    .navbar{
+        height: 100px;
+    }
     .navbar-dark .navbar-brand{
         font-size: 2em;
     }
@@ -485,11 +493,16 @@ body{
         position: relative;
     }
     #navitems .nav-item .nav-link.active::before{
-        content: "• ";
+        display: block;
+        content: "\00a0 ";
+        background-color: #ff7425;
+        border-radius: 50%;
         font-size: 2em;
+        height: 7px;
+        width: 7px;
         position: absolute;
-        top: -5px;
         left: -20px;
+        top: 16px;
     }
 
     .why{
@@ -676,6 +689,7 @@ body{
     }
     .contact-info{
         align-items: start;
+        margin-top: 0;
     }
     .contact-info h2{
         margin-bottom: 2rem;
@@ -714,7 +728,8 @@ body{
         margin-left: 2.5rem;
     }
     #navitems .nav-item .nav-link.active::before{
-        top: -0.5rem;
+
+        top: 19px;
     }
    
     .hero{
@@ -868,8 +883,11 @@ body{
     .form{
         height: 500px; /*to do*/
     }
+    .contact-info{
+        margin-top: 0;
+    }
     .contact-info h2{
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
     .contact-info > div{
         align-items: start;
