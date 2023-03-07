@@ -52,6 +52,8 @@ body{
 
 }
 */
+
+
 /*hero */
 
 .hero{
@@ -160,7 +162,7 @@ body{
 }
 .about-text{
     color: white;
-    text-align: center;
+    text-align: start;
     font-size: 1.2em;
     font-weight: 800;
     line-height: 18pt;
@@ -188,6 +190,7 @@ body{
     color: white;
     width: 50%;
     margin: auto;
+    text-align: start;
     
 }
 
