@@ -39,6 +39,10 @@ body{
     background-color: #242424;
   
   }
+  .navbar.scroll {
+    background-color: #242424;
+  
+  }
 
   .nav-link.active {
     color: #ff7425 !important;
@@ -66,6 +70,7 @@ body{
     width: 100%;
     text-align: center;
     padding: 20px;
+    padding-top: 3rem;
     
 }
 .hero-section{
@@ -93,7 +98,7 @@ body{
     background-color: transparent;
     color: #ff7425;
     border: 2px solid #ff7425;
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding: 1.5vw 3vw;
     transition: all 0.2s ease-in-out;
 }
@@ -104,9 +109,9 @@ body{
 .hero-section a{
     display: inline-block;
     max-width: fit-content;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    margin-bottom: 10px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-bottom: 8px;
 }
 
 .computer{
@@ -152,7 +157,7 @@ body{
 .about{
     scroll-margin-top: 40px;
     padding: 10%;
-    text-align: center;
+    text-align: start;
 }
 .about h2{
     color: #ff7425;
@@ -166,7 +171,7 @@ body{
     font-size: 1.2em;
     font-weight: 800;
     line-height: 18pt;
-    margin-bottom: 10%;
+    margin-bottom: 7rem;
 }
 .about-foto{
     display: none;
@@ -175,7 +180,7 @@ body{
     box-shadow: black 10px 10px;
 }
 .about-card{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .icon{
     max-width: 100px;
@@ -188,8 +193,8 @@ body{
 }
 .about-card-text{
     color: white;
-    width: 50%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
     text-align: start;
     
 }
@@ -539,6 +544,7 @@ body{
     .about{
         scroll-margin-top: 100px;
         padding: 5%;
+        text-align: center;
     }
     .about h2{
         margin-bottom: 5rem;
@@ -575,7 +581,8 @@ body{
         margin-bottom: 0;
     }
     .about-card-text{
-        width: 60%;
+        width: 80%;
+        margin: auto;
     }
 
 

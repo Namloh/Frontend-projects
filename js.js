@@ -13,31 +13,19 @@ var collapse =  document.getElementsByClassName('navbar-collapse')
 var opened = false;
 
 hamburger.addEventListener("click", function(){
-    console.log(opened)
-    if(opened){
+    if(opened && navbar[0].classList.contains("scroll")){
         setTimeout(() => {
-            navbar[0].classList.remove("scrolled")
+            navbar[0].classList.remove("scroll")
           }, "330");
         opened = false;
     }
     else{
-        navbar[0].classList.add("scrolled")
+        navbar[0].classList.add("scroll")
         opened = true;
     }
     
        
 })
 
-/*
-var arrows =  document.getElementsByClassName('arr-btn')
-var items = document.getElementsByClassName('carousel-item active')
 
-Array.from(arrows).forEach(function (element) {
-    element.addEventListener("click", function(){
-        if(items.length > 1){
-            items[0].classList.remove("active")
-        }
-    })
-});
-*/
 
