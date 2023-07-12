@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<title>Bistro Génius</title>
+</head>
+<body id="bistro" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" data-bs-offset="250" class="scrollspy-example" tabindex="0">
+   
+
+    
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top"  id="list-example">
+    <div class="container-fluid nav-flex">
+      <img src="./Data/Logo_Bistro.png" alt="Logo Bistra" >
+      <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+      <div class="collapse navbar-collapse top_nav" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="navitems" >
+          <li class="nav-item">
+            <a href="#bistro" class="nav-link">Bistro</a>
+          </li>
+          <li class="nav-item "><a href="#menu" class="nav-link">Jídelní lístek</a>
+          </li>
+          <li class="nav-item "><a href="#about" class="nav-link">O nás</a>
+          </li>
+          <li class="nav-item "><a href="#reference" class="nav-link">Reference</a>
+          </li>
+          <li class="nav-item "><a href="#fotogalerie" class="nav-link">Fotogalerie</a>
+          </li>
+          <li class="nav-item "><a href="#footer" class="nav-link">Kontakt</a>
+          </li>
+
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero" >
+    <div class="hero-cont">
+        <div class="hero-text">
+            <h1>Bistro</h1>
+            <p>Máte hlad? Máte na něco chuť? <br> Pořádáte party nebo firemní akci s pohoštěním?</p>
+            <a href="#footer">Kontaktujte nás!</a>
+            <div class="arrows">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <img src="./Data/left-arrow.png" alt="Šipka doleva">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <img src="./Data/right-arrow.png" alt="Šipka doprava">
+                </button>
+            </div>
+         </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img draggable="false" src="./Data/Fotky_Slider/Bistro_foto_slider_1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img draggable="false" src="./Data/Fotky_Slider/Bistro_foto_slider_2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img draggable="false" src="./Data/Fotky_Slider/Bistro_foto_slider_3.png" class="d-block w-100" alt="...">
+            </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+<section style="scroll-margin-top: 100px;" class="menu" id="menu">
+    <div class="container">
+        <div class="menu-img">
+            <img src="./Data/Bistro_foto_jídelák.png"  alt="Foto dnešní speciality">
+            <div>
+                <h1>Jídelní lístek</h1>
+                <p>20.04.2023</p>
+            </div>
+           
+        </div>
+            <div>
+                <h1 class="title">
+                    <span class="title-text soups">Polévky</span>
+                </h1>
+                <h1 class="title">
+                    <span class="title-text ">Hovězí vývar se zeleninou</span>
+                    <span class="title-number">40,-</span>
+                </h1>
+                <h1 class="title">
+                    <span class="title-text ">Kulajda s houbami</span>
+                    <span class="title-number">50,-</span>
+                </h1>
+
+                <h1 class="title">
+                    <span class="title-text soups">Hlavní chody</span>
+                </h1>
+                <h1 class="title">
+                    <span class="title-text ">Velký zeleninový salát <br> s kozím sýrem a pečenou červenou řepou</span>
+                    <span class="title-number">129,-</span>
+                </h1>
+                <h1 class="title">
+                    <span class="title-text ">Zapečené francouzské brambory <br> s uzeným masem, vejcem, salátek</span>
+                    <span class="title-number">139,-</span>
+                </h1>
+                <h1 class="title">
+                    <span class="title-text ">Segedínký guláš, domácí houskové knedlíky</span>
+                    <span class="title-number">139,-</span>
+                </h1>
+                <h1 class="title">
+                    <span class="title-text ">Smažený vepřový nebo kuřecí řízek, <br> domácí bramborový salát</span>
+                    <span class="title-number">149,-</span>
+                </h1>
+            </div>
+    </div>
+</section>
+
+
+<section style="scroll-margin-top: 100px;" class="about" id="about">
+    <div class="container">
+        <h1>Kdo jsme a co děláme?</h1>
+        <p>
+            Od léta roku 2013 provozujeme v administrativním a průmyslovém areálu Genius v Dolních Chabrech nekuřácké bistro s kapacitou 70 míst.
+<br>
+<br>
+Den u nás začíná snídaní a Vy si můžete vybrat ze širokého sortimentu domácích koláčů a dezertů, polévek, salátů a vaječných specialit. Samozřejmostí je čerstvé pečivo a výborná káva nebo čaj.
+<br>
+<br>
+K obědu nabízíme výběr minimálně ze dvou druhů polévek a čtyř teplých hlavních jídel, několika druhů salátů a dezertů. Vždy u nás najdete tradiční domácí českou kuchyni, lehké a zdravé zeleninové a luštěninové pokrmy, ale také speciality z celého světa. Naše menu vždy připravujeme bez použití polotovarů, chemických dochucovadel a přísad. Vaříme vždy z čerstvých sezónních surovin, šetrně tepelně upravených tak, aby naše pokrmy splňovaly zásady zdravé výživy. Naše kuchyně vybavená tím nejlepší a nejmodernějším gastronomickým zařízením, nám umožňuje využívat nových technologických postupů a tepelných úprav dle nejnovějších trendů.
+<br>
+<br>
+Samozřejmostí je u nás možnost odnést si všechny pokrmy s sebou, bezproblémové parkování.
+
+        </p>
+    </div>
+</section>
+
+<section style="scroll-margin-top: 100px;" class="customers" id="reference">
+    <div class="container">
+        <h1>Naši zákazníci</h1>
+        <div class="ref-icons">
+            <a href="https://www.aaaauto.cz"><h2>AAA Auto</h2></a>
+            <a href="https://gynem.cz"><h2>Gynem</h2></a>
+            <a href=""><h2>Dospel</h2></a>
+            <a href="https://www.oakbay.cz/cs"><h2>OakBay</h2></a>
+          </div>
+    </div>
+</section>
+
+<section style="scroll-margin-top: 180px;" class="customers fotogalerie" id="fotogalerie">
+    <div class="container">
+        <h1>Fotogalerie</h1>
+        <p>Bistro</p>
+        <div class="grid-container">
+            <div class="grid-row">
+              <img src="Data/Fotky_Galerie_Slider/Bistro_1.jpeg" alt="slider foto 1">
+              <img src="Data/Fotky_Galerie_Slider/Bistro_2.jpeg" alt="slider foto 2">
+              <img src="Data/Fotky_Galerie_Slider/Bistro_3.jpeg" alt="slider foto 3">
+              <img src="Data/Fotky_Galerie_Slider/Bistro_4.jpeg" alt="slider foto 4">
+              <img src="Data/Fotky_Galerie_Slider/Bistro_5.jpeg" alt="slider foto 5">
+            </div>
+          </div>
+                
+            <input id="inslider" type="range" min="0" max="1000" step="1" value="10">
+    </div>
+</section>
+
+
+
+
+<section style="scroll-margin-top: 50px;" class="footer" id="footer">
+    <div class="container">
+        <h1>Kdy, kde a jak?</h1>
+        <div class="footer-flex">
+        <div class="footer-info">
+            <h1>Bistro Genius</h1>
+            <p>Dopraváků 749/3 <br> Praha 8 - Dolní Chabry</p>
+            <div class="contact phone">
+                <img src="Data/call.png" alt="Telefon">
+                <div>
+                    <p>+420 284 686 820</p>
+                    <p>+420 602 632 514</p>
+                </div>
+              
+            </div>
+            <div class="contact email">
+                <img src="Data/email.png" alt="Email">
+                <p>bistrogesnius@bistrogenius.com</p>
+            </div>
+
+            <h1>Otevírací doba</h1>
+            <p><strong>Po - Pá:</strong> 9:00 - 14:00</p>
+            <p><strong>Snídaně</strong> 9:00 - 11:00</p>
+            <p><strong>Obědy</strong> 11:00 - 14:00</p>
+        </div>
+
+        <div class="footer-form">
+            <h1>Napište nám</h1>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Jméno" required>
+              
+                <input type="email" id="email" name="email" placeholder="Email" required>
+              
+                <textarea id="message" name="message" placeholder="Vzkaz" required></textarea>
+              
+                <button type="submit">Odeslat</button>
+              </form>
+        </div>
+
+       
+    </div>
+    <hr>
+    <div class="credit" style="text-align: center;">
+        <p>@ Bistro Génius </p>
+        <p>Vytvořilo  <a href="https://www.kassua.cz/"><u>Kassua Studio</u></a></p>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+  
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="./js.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

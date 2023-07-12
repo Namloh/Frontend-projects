@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+        <section id="hero">
+            <div class="container">
+                <div class="d-flex flex-column flex-column-reverse flex-md-row">
+                    <div class="col col-md-5 me-md-5">
+                        <h1 class="main-text">Welcome to <u>Gollo</u>!</h1>
+                        <p class="submain-text">
+                           The biggest, most fine tuned gallery website in the multiverse. Feel free to explore our mighty lands as you please.
+                        </p>
+                    </div>
+                    <div class="col col-md-7">
+                        <div>
+                            <img class="img-fluid rounded mb-4 mb-md-0" src="https://courtauld.ac.uk/wp-content/uploads/2022/02/The-Morgan-Stanley-Exhibition_-Van-Gogh.-Self-Portraits-at-The-Courtauld-Gallery.-Photo-%C2%A9Fergus-Carmichael-aspect-ratio-16-9-1-0x0-c-default.jpg" alt="main-image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         
+
+                <h2 class="top-12">Explore The Top 12 Newest Public Images From All Users</h2>
+
+                <div class="galleryflex">
+                    @foreach (var f in Model.Files)
+                    {
+
+                    <div class="galitem">
+                    @if (f.ThumbnailId != null)
+                    {
+                        
+                        <div class="karta">
+                             <a asp-page="Image" asp-route-id="@f.Id">
+                            <img class="card-img-top" src="@Url.Page("/Index","Thumbnail",new {filename=f.ThumbnailId })" alt="joe" />
+                            </a>
+                            <div class="karta-body">
+                                    <p class="fs-5">Gallery Name: @f.Gallery.GalleryName </p>
+                                    <p class="fs-5">Image Name: @f.OriginalName </p>
+                                    <p class="fs-5">Description: @f.Description </p>
+                                    <p class="fs-5">Uploader: @f.Uploader.UserName </p>
+                                    <p class="fs-5">Date Uploaded: @f.UploadedAt </p>
+                                    <p class="fs-5">Date Taken: @f.ExifDateTaken </p>
+                                    <p class="fs-5">Type: @f.ContentType </p>
+                                   
+                           <a asp-page="Image" asp-route-id="@f.Id"><button title="Show Image" class="buton thumbnail"><i class="fa fa-image"></i></button></a>
+                        
+                            <a asp-page-handler="download" asp-route-filename="@f.Id"><button title="Download" class="buton download"><i class="fa fa-solid fa-download"></i></button></a>
+                        
+                            </div>
+                        </div>
+                    
+                    }
+                    </div>
+                    }
+
+                </div>
+
+
+
+
+
